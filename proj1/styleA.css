@@ -1,0 +1,102 @@
+/* styles.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 根据图片中字母的高度调整 */
+}
+
+.text>*:not(:last-child) {
+    /* 选择.text内的所有子元素，除了最后一个 */
+    margin-bottom: 10px;
+    /* 在元素下方添加10px的间隔 */
+}
+
+.letter {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    border-top: 1px solid rgb(64, 70, 158);
+    /* 仅上边界显示蓝色边框 */
+    border-left: 1px solid transparent;
+    /* 左边界透明 */
+    border-right: 1px solid transparent;
+    /* 右边界透明 */
+    border-bottom: 1px solid transparent;
+    /* 下边界透明 */
+    /* 设置边框的颜色和粗细 */
+    padding: 1px;
+    /* 添加内边距，使边框与字母有一定距离 */
+    display: inline-block;
+    /* 使容器适应内容宽度 */
+    width: 100px;
+    /* 可以调整以适应字母的宽度 */
+    height: 100px;
+    /* 调整以适应字母的高度 */
+    box-sizing: border-box;
+    /* 确保边框和内边距不会增加元素的总宽度或高度 */
+    background-color: #dfe1e7;
+}
+
+.letter2 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    border-top: 1px solid rgb(64, 70, 158);
+    /* 仅上边界显示蓝色边框 */
+    border-left: 1px solid transparent;
+    /* 左边界透明 */
+    border-right: 1px solid transparent;
+    /* 右边界透明 */
+    border-bottom: 1px solid transparent;
+    /* 下边界透明 */
+    padding: 10px;
+    /* 添加内边距 */
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #eeeff2;
+    /* 设置背景颜色，您可以选择任何喜欢的颜色 */
+}
+
+
+.letter3 {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.2;
+    border-top: 4px solid rgb(0, 0, 0);
+    /* 上边界 */
+    border-left: 4px solid rgb(0, 0, 0);
+    /* 左边界 */
+    border-right: 4px solid rgb(0, 0, 0);
+    /* 右边界 */
+    border-bottom: 4px solid rgb(0, 0, 0);
+    /* 下边界 */
+    /* 添加内边距 */
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    box-sizing: content-box;
+    background-color: #687291;
+    /* 设置背景颜色，您可以选择任何喜欢的颜色 */
+    margin-right: -4px;
+    margin-left: -4px;
+}
