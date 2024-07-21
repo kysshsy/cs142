@@ -1,3 +1,4 @@
+"use strict";
 function cs142MakeMultiFilter(originalArray) {
     let currentArray = originalArray.slice();
     function arrayFilter(filterCriteria, callback) {

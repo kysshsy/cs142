@@ -1,10 +1,11 @@
+"use strict";
 class Cs142TemplateProcessor {
     constructor(template) {
         this.template = template;
     }
     fillIn(directory) {
         let string = this.template;
-        for (let key in directory) {
+        for (const key in directory) {
             string = string.replace("{{" + String(key) + "}}", directory[key]);
         }
         return string;
